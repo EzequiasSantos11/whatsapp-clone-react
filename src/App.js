@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import ChatListItem from "./components/ChatListItem/ChatListItem";
 import NewChat from "./components/NewChat";
 import ChatIntro from "./components/ChatIntro";
@@ -23,6 +23,10 @@ function App() {
     {chatId: 3, title: "Ezequias Santos", date: "12:00", message: "alkfjaçldkfjaçdkfjadflkajdflçkadjfaçlkdfjadfkjaçldkfjakfdjienavb78549", image: "https://thumbs.dreamstime.com/b/user-profile-avatar-solid-black-icon-simple-vector-filled-flat-line-pictogram-isolated-white-background-134042567.jpg"},
     {chatId: 4, title: "Ezequias Santos", date: "12:00", message: "alkfjaçldkfjaçdkfjadflkajdflçkadjfaçlkdfjadfkjaçldkfjakfdjienavb78549", image: "https://thumbs.dreamstime.com/b/user-profile-avatar-solid-black-icon-simple-vector-filled-flat-line-pictogram-isolated-white-background-134042567.jpg"},
   ]);
+  
+  setChatList([...chatList, {chatId: 4, title: "Ezequias Santos", date: "12:00", message: "alkfjaçldkfjaçdkfjadflkajdflçkadjfaçlkdfjadfkjaçldkfjakfdjienavb78549", image: "https://thumbs.dreamstime.com/b/user-profile-avatar-solid-black-icon-simple-vector-filled-flat-line-pictogram-isolated-white-background-134042567.jpg"}]);
+
+
   const [activeChat, setActiveChat] = useState({});
   const [showNewChat, setShowNewChat] = useState(false);
   const handleNewChat = ()=>{

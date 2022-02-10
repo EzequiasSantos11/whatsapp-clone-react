@@ -41,6 +41,7 @@ export default function ChatWindow({user}){
     {author: 123, body: "bla bla bla bla bla bla"},
     {author: 1234, body: "bla bla bla bla"},
   ]);
+  setList([...list, {author: 1234, body: "bla bla bla bla"}])
   useEffect(()=>{
     if(body.current.scrollHeight > body.current.offsetHeight){
       body.current.scrollTop = body.current.scrollHeight - body.current.offsetHeight;

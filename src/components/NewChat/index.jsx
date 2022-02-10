@@ -10,6 +10,7 @@ export default function NewChat({user, chatList, show, setShow}){
     {id: 123, avatar: "https://github.com/ezequiassantos11.png", name: "Dani Linda"},
     {id: 123, avatar: "https://github.com/ezequiassantos11.png", name: "Dani Linda"},
   ]);
+  setList([...list, {id:222, avatar: "", name:""}])
   const handleClose = ()=>{
     setShow(false);
   };
